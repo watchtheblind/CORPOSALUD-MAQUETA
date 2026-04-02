@@ -1,0 +1,13 @@
+# --- Data processing and OCR ---
+pytesseract==0.3.13
+pdf2image==1.17.0
+Pillow==12.2.0
+opencv-python-headless==4.9.0.80 #we use headless due low performance pc usage
+
+# --- Data handling and excel---
+pandas==3.0.1
+openpyxl==3.1.5
+
+# --- Ui | Utils ---
+customtkinter==5.2.2
+pydantic==2.12.5
