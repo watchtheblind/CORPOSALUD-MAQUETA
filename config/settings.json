@@ -1,0 +1,16 @@
+{
+  "project": "Payroll-OCR-Automation",
+  "flags": {
+    "debug": true,
+    "save_temp_images": true,
+    "strict_mode": false
+  },
+  "ocr": {
+    "tesseract_path": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+    "language": "spa"
+  },
+  "paths": {
+    "input": "data/input",
+    "output": "data/output"
+  }
+}

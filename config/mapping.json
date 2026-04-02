@@ -1,0 +1,13 @@
+{
+    "keywords": {
+        "cedula": ["C.I", "Cedula", "Identidad"],
+        "nombre y apellidos": ["Nombre", "Nombres y Apellidos", "Apellidos y Nombres", "Apellido"],
+        "sueldo": ["Sueldo Base", "Asignaciones", "Sueldo Mensual", "Sueldo"],
+        "fecha de ingreso": ["Fecha de ingreso", "Fecha ingreso"],
+        "cargo": ["Cargo/Funciones", "cargo", "funciones"],
+        "ubicación laboral": ["Ubicación laboral", "Ubicación"]
+    },
+    "regex_patterns": {
+        "monto_decimal": "\\d{1,3}(?:\\.\\d{3})*(?:,\\d{2})?"
+    }
+}
