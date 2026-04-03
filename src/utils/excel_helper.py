@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 from openpyxl import load_workbook
-from src.models.salary_record import WorkerRecord
+from src.models.worker_record import WorkerRecord
 from typing import List
 
 class ExcelHelper:

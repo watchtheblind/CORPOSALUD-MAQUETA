@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List
-from src.models.salary_record import WorkerRecord
+from src.models.worker_record import WorkerRecord
 
 class BaseExtractor(ABC):
     """Any OCR engine must implement this method"""

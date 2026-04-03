@@ -1,6 +1,6 @@
 import unittest
 import os
-from src.models.salary_record import WorkerRecord
+from src.models.worker_record import WorkerRecord
 from src.utils.excel_helper import ExcelHelper
 
 class TestExcelHelper(unittest.TestCase):

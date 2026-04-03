@@ -9,7 +9,7 @@ class ConfigLoader:
         self.data = self._load_file()
 
     def _load_file(self) -> dict:
-        """reads file and handles reading error"""
+        """reads config file and handles reading error"""
         if not os.path.exists(self.config_path):
             raise FileNotFoundError(f"Configuración no encontrada en: {self.config_path}")
         with open(self.config_path, "r") as file:
