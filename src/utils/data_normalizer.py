@@ -40,3 +40,14 @@ class DataNormalizer:
         Removes dots, spaces and letters from ID (V-12.345.678 -> 12345678).
         """
         return re.sub(r'[^0-9]', '', str(raw_id))
+        
+    def clean_label(self, text: str) -> str:
+        """
+        Elimina prefijos comunes como 'NOMBRE:', 'C.I:', etc.
+        Ejemplo: 'NOMBRE: LUIS' -> 'LUIS'
+        """
+        if ":" in text:
+            # Dividimos por los dos puntos y nos quedamos con la parte derecha
+            text = text.split(":", 1)[1]
+        
+        return text.strip()
