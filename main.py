@@ -11,14 +11,14 @@ def main():
     # 1. Cargar configuraciones
     config = ConfigLoader("config/settings.json")
     mapping = ConfigLoader("config/mapping.json")
-    
+
     # 2. Inicializar componentes
     normalizer = DataNormalizer(mapping)
-    extractor = TesseractHandler(config) # El OCR
+    extractor = TesseractHandler(config)
     processor = Processor(extractor, normalizer)
     writer = ExcelWriter("data/output/reporte_nomina.xlsx")
 
-    # 3. Obtener lista de archivos PDF en la carpeta de entrada
+
     input_dir = "data/input"
     files = [os.path.join(input_dir, f) for f in os.listdir(input_dir) if f.endswith(".pdf")]
 
